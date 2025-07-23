@@ -30,7 +30,7 @@ simulador-emails/
 
 ```bash
 git clone https://github.com/carluis-berrocal/envio-emails.git
-cd simulador-emails
+cd envio-emails
 ```
 
 2. **Instala las dependencias:**
@@ -82,3 +82,6 @@ El formulario valida todos los campos requeridos antes de enviar. Si falta algun
 ---
 
 Desarrollado por Carluis Berrocal 🚀
+## 📧 Envío de Correos
+## 📄 Licencia
+Licencia MIT © 2025
