@@ -29,7 +29,7 @@ simulador-emails/
 1. **Clona el repositorio:**
 
 ```bash
-git clone https://github.com/tu-usuario/simulador-emails.git
+git clone https://github.com/carluis-berrocal/envio-emails.git
 cd simulador-emails
 ```
 
