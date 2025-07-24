@@ -9,14 +9,17 @@
     <title>Envio de Emails</title>
 </head>
 
-<body class="min-h-screen bg-slate-300">
+<body class="min-h-screen bg-gradient-to-t from-[#495c69] to-[#154366] relative">
+    <!-- Contenedor de partículas -->
+    <!-- <div id="particles-js" class="absolute inset-0 -z-10"></div> -->
+
     <div class="max-w-3xl mx-auto p-10">
-        <h1 class="text-4xl text-gray-700 pt-32">Enviar mails</h1>
+        <h1 class="text-4xl text-white pt-5 text-center">Enviar mails</h1>
         <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
             <form id="formulario" class="space-y-3">
                 <div class="flex flex-col space-y-2">
                     <label for="email" class="font-regular font-medium">Email:</label>
-                    <input id="email" type="email" name="email" placeholder="Email Destino, ej: carcoste@gmail.com"
+                    <input id="email" type="email" name="email" placeholder="Ej: carcoste@gmail.com"
                         class="border border-gray-300 px-3 py-2 rounded-lg" />
                 </div>
 
@@ -30,7 +33,6 @@
                     <label for="nombre" class="font-regular font-medium">Nombre:</label>
                     <input id="nombre" type="text" name="nombre" placeholder="Nombre del Remitente"
                         class="border border-gray-300 px-3 py-2 rounded-lg" />
-
                 </div>
 
                 <div class="flex flex-col space-y-2">
@@ -57,7 +59,8 @@
                         Enviar
                     </button>
 
-                    <button class="flex-1 bg-gray-800 text-white flex justify-center gap-2 items-center p-3 cursor-pointer"
+                    <button
+                        class="flex-1 bg-gray-800 text-white flex justify-center gap-2 items-center p-3 cursor-pointer"
                         type="reset">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -69,8 +72,8 @@
                 </div>
             </form>
 
-            <div id="spinner" class="mt-5 hidden">   
-                <!-- mostar spinner mientras se envia el email -->
+            <div id="spinner" class="mt-5 hidden">
+                <!-- Spinner mientras se envía -->
                 <div class="spinner">
                     <div class="rect1"></div>
                     <div class="rect2"></div>
@@ -80,10 +83,36 @@
                 </div>
                 <p class="text-center text-gray-700">Enviando mensaje...</p>
             </div>
-                
-            
         </div>
     </div>
+    <footer class="bg-gray-800 py-6">
+        <div class="flex flex-col items-center space-y-4">
+            <!-- Redes sociales -->
+            <div class="flex space-x-6">
+                <a href="https://www.facebook.com/carluis.berrocal" target="_blank">
+                    <img src="imagenes/facebook.png" alt="Facebook" class="w-8 h-8 hover:opacity-80 transition">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=573148086523" target="_blank">
+                    <img src="imagenes/whatsapp2.png" alt="WhatsApp" class="w-8 h-8 hover:opacity-80 transition">
+                </a>
+                <a href="https://www.instagram.com/carluisberrocal/?hl=es-la" target="_blank">
+                    <img src="imagenes/instagram.png" alt="Instagram" class="w-8 h-8 hover:opacity-80 transition">
+                </a>
+                <a href="https://www.linkedin.com/in/carluis-berrocal-237910140" target="_blank">
+                    <img src="imagenes/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80 transition">
+                </a>
+            </div>
+
+            <!-- Texto -->
+            <p class="text-gray-300 text-lg text-center">
+                © 2025 <a href="https://carluisberrocal.netlify.app" target="_blank" class="underline hover:text-pink-400">
+                    Carluis Berrocal</a> 
+                    | Desarrollador Web Colombia. Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
+
     <script type="module" src="src/app.js"></script>
 </body>
 
