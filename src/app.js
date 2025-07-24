@@ -48,6 +48,19 @@ document.addEventListener('DOMContentLoaded', () => {
             comprobarEmail();
             return;
         }
+
+        if(e.target.type === 'text' && e.target.name === 'celular' && e.target.value.length < 10){
+            mostarAlerta('El celular debe tener al menos 10 dígitos', e.target.parentElement);
+            email[e.target.name] = '';
+            comprobarEmail();
+            return;
+        }
+        if(e.target.type === 'text' && e.target.name === 'celular' && e.target.value.length > 10){
+            mostarAlerta('El celular no debe tener más de 10 dígitos', e.target.parentElement);
+            email[e.target.name] = '';
+            comprobarEmail();
+            return;
+        }
         //si el campo es valido, limpiar la alerta previa si existe
         limpiarAlerta(e.target.parentElement);
            
