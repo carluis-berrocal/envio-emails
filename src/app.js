@@ -146,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //funcion para resetear el formulario
     function defaultForm() {
         formulario.reset();
+        limpiarAlerta(formulario);
         //limpiar el objeto email
         email.email = '';
         email.asunto = '';
